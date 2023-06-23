@@ -151,9 +151,8 @@ resource "aws_launch_template" "my_launch_template" {
   
   image_id = "ami-022e1a32d3f742bd8"
   instance_type = "t2.micro"
-  key_name = "ubuntu"
+  key_name = "kp_12"
   
-  user_data = filebase64("${path.module}/server.sh")
 
   block_device_mappings {
     device_name = "/dev/sda1"
